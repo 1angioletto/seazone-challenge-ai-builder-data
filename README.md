@@ -1,43 +1,241 @@
-# seazone-challenge-ai-builder-data
+# Seazone AI Builder Challenge
 
-Repositório base do desafio técnico para a vaga de **Senior AI Builder — squad Data Edge** (Seazone).
+Este repositório contém minha solução para o desafio técnico de Senior AI Builder da Seazone.
 
-A descrição completa do desafio está no PDF enviado por e-mail. Este repositório serve como ponto de partida: contém o dataset que você vai usar nas Partes 1 e 2 e a branch com o PR sintético para a Parte 3.
+O objetivo foi abordar o problema sob diferentes perspectivas: análise de dados, especificação de produto, code review e liderança técnica, utilizando um fluxo de trabalho orientado por specs e acelerado por IA.
 
-## Conteúdo
+---
 
-### Branch `main`
-- `data/` — amostras reais de Itapema (Airbnb + VivaReal), ~20 MB total
-  - `Details_Itapema.csv` — detalhe de cada listing Airbnb (4.5k linhas)
-  - `Hosts_ids_Itapema.csv` — perfis dos hosts (4.4k linhas)
-  - `Mesh_Ids_Data_Itapema.csv` — geolocalização e bairro de cada listing (4.4k linhas)
-  - `Price_AV_Itapema.csv` — preço por noite, por dia, por listing (118k linhas)
-  - `VivaReal_Itapema.csv` — listings de aluguel/venda no VivaReal (8.3k linhas)
+# Stack utilizada
 
-### Branch `pr-review/feature-system-price-v2`
-Contém o PR sintético que você deve revisar na Parte 3:
+- Python
+- uv + pyproject.toml
+- Polars
+- Parquet
+- DuckDB
+- Git
+- Claude / ChatGPT como AI Co-author
 
-- `pipelines/system_price_v2.py` — pipeline em Python
-- `pipelines/gold_system_price_itapema.sql` — SQL da gold table
-- `pipelines/requirements.txt`
-- `PR_DESCRIPTION.md` — mensagem do "Júnior" abrindo o PR
+Sem Jupyter Notebook.
 
-> **Não modifique essa branch.** Faça fork do repositório, abra o PR de revisão a partir do seu fork (base: `main` do seu fork; compare: `pr-review/feature-system-price-v2` do seu fork) e deixe seus comentários inline.
+---
 
-## Setup sugerido
+# Estrutura do projeto
 
-Python 3.11+, gerenciador de pacotes à sua escolha (uv/pip/poetry). O código da branch do PR usa `pandas` e `duckdb` — você pode rodar tudo localmente sem precisar de banco externo.
-
-```bash
-pip install -r pipelines/requirements.txt
-python pipelines/system_price_v2.py
+```text
+.
+├── analysis/
+├── ai-sessions/
+├── data/
+├── plano-squad/
+├── report/
+├── reviews/
+├── specs/
+│   ├── 01-bi-itapema/
+│   └── 02-inteligencia-brasil/
+└── README.md
 ```
 
-Para as Partes 1 e 2 você escolhe sua stack — não precisa seguir a do PR.
+---
 
-## Entrega
+# Parte 1 — BI Itapema
 
-Conforme o PDF, envie por e-mail respondendo à thread do processo:
+Objetivo:
 
-1. **Link do repositório público** com a entrega completa (estrutura indicada no PDF).
-2. **Link do PR de revisão** (no seu fork deste repositório base) com os comentários inline da Parte 3.
+Responder, com base nos dados fornecidos, as seguintes perguntas:
+
+- Qual o melhor perfil de imóvel para investir?
+- Qual a melhor localização em termos de receita?
+- Quais características explicam as melhores receitas?
+- Onde construir um prédio de 50 apartamentos?
+- Qual o ROI projetado para 2025, 2026 e 2027?
+
+## Principais análises
+
+- Perfil dos imóveis
+- Impacto das amenities
+- Vista para o mar
+- Distância da praia
+- Regressão linear
+- Random Forest
+- Ranking das regiões
+- Projeção de ROI
+- Perfil ideal do empreendimento
+
+## Tecnologias
+
+- Python
+- Polars
+- Parquet
+
+## Scripts
+
+Todos os scripts estão em:
+
+```text
+analysis/src/
+```
+
+Os outputs gerados encontram-se em:
+
+```text
+analysis/output/
+```
+
+---
+
+# Parte 2 — Inteligência Brasil
+
+Especificação de um produto nacional para apoiar:
+
+- Revenue Management
+- Acquisition
+- Origination
+
+Documentos produzidos:
+
+```text
+specs/02-inteligencia-brasil/
+
+constitution.md
+spec.md
+plan.md
+```
+
+O objetivo é transformar análises pontuais por cidade em uma plataforma escalável para o Brasil inteiro.
+
+---
+
+# Parte 3 — Code Review
+
+Foi realizado o review do PR sintético `feature-system-price-v2`.
+
+Entregas:
+
+- Comentários inline no Pull Request.
+- Documento de revisão:
+
+```text
+reviews/01-system-price-v2.md
+```
+
+Os principais pontos abordados foram:
+
+- Confiança das métricas.
+- Idempotência.
+- Dependências desnecessárias.
+- Segurança.
+- Reprodutibilidade.
+
+---
+
+# Parte 4 — Plano 30/60/90
+
+Plano de atuação como líder técnico contemplando:
+
+- Primeiros 30 dias.
+- Dias 30-60.
+- Dias 60-90.
+- Gestão de underperformance.
+
+Arquivo:
+
+```text
+plano-squad/30-60-90.md
+```
+
+---
+
+# Spec-driven Development
+
+Todas as entregas foram orientadas por especificações.
+
+## Parte 1
+
+```text
+specs/01-bi-itapema/
+
+constitution.md
+spec.md
+plan.md
+```
+
+## Parte 2
+
+```text
+specs/02-inteligencia-brasil/
+
+constitution.md
+spec.md
+plan.md
+```
+
+---
+
+# AI Co-author
+
+A IA foi utilizada como aceleradora do processo, principalmente para:
+
+- Discovery dos dados;
+- Exploração de hipóteses;
+- Estruturação das análises;
+- Discussões sobre modelagem;
+- Revisão dos resultados;
+- Code review;
+- Elaboração dos documentos.
+
+As sessões estão documentadas em:
+
+```text
+ai-sessions/
+```
+
+E os aprendizados e limitações encontram-se em:
+
+```text
+report/
+
+AI_COAUTHOR_LOG.md
+LIMITATIONS.md
+```
+
+---
+
+# Reprodutibilidade
+
+Instalação:
+
+```bash
+cd analysis
+
+uv sync
+```
+
+Execução:
+
+```bash
+uv run src/amenities_analysis.py
+
+uv run src/roi_by_region_analysis.py
+
+uv run src/sea_view_analysis.py
+
+uv run src/roi_projection.py
+
+uv run src/location_profile_analysis.py
+```
+
+---
+
+# Observações
+
+O foco da solução foi priorizar:
+
+- Clareza das decisões.
+- Reprodutibilidade.
+- Simplicidade.
+- Pensamento de produto.
+- Uso responsável de IA.
+- Entregas incrementais.
+
+Mais do que buscar a arquitetura mais complexa, o objetivo foi construir uma solução que pudesse ser compreendida, evoluída e operada por um time de forma sustentável.
