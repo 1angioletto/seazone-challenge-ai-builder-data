@@ -1,0 +1,2 @@
+model,rows_used,r2_score,mae_brl
+random_forest,977,0.5885,166.76

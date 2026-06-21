@@ -1,0 +1,7 @@
+beach_distance_category,listings,avg_amenity_score,median_amenity_score,avg_daily_price,median_daily_price
+,6,8.67,9.0,560.12,625.0
+01_premium_frente_mar,284,9.4,9.0,816.11,661.0
+02_alta_proximidade_ate_200m,224,9.19,9.0,622.47,550.0
+03_media_proximidade_201m_500m,356,9.14,9.0,637.21,500.0
+04_baixa_proximidade_acima_500m,32,8.62,9.0,579.35,350.0
+05_sem_informacao,97,8.74,9.0,750.4,557.0

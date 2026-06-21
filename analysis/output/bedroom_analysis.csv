@@ -1,0 +1,5 @@
+bedrooms,listings,avg_daily_price,median_daily_price,avg_price_per_bedroom,median_price_per_bedroom,avg_price_per_guest,median_price_per_guest
+1.0,144,419.2,387.0,419.2,387.0,144.52,143.75
+2.0,351,547.82,472.0,273.91,236.0,102.91,82.5
+3.0,404,712.74,680.0,237.58,226.67,96.74,92.87
+4.0,80,1292.49,1025.0,323.12,256.25,136.58,100.0

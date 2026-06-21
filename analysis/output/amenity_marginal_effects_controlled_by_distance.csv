@@ -1,0 +1,10 @@
+amenity,total_comparable_listings,weighted_premium_pct,weighted_median_diff,distance_categories_used
+has_barbecue,961,21.65,82.63,4
+has_elevator,961,10.73,49.34,4
+long_term_allowed,961,7.24,44.08,4
+pet_friendly,961,6.92,33.5,4
+has_home_office,961,4.73,19.48,4
+has_bathroom_items,961,2.39,9.84,4
+has_self_checkin,961,-0.84,-5.32,4
+has_security,961,-1.94,-10.08,4
+has_outdoor_area,961,-1.99,-10.52,4

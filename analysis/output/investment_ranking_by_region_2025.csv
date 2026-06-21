@@ -1,0 +1,7 @@
+region,airbnb_listings,vivareal_listings,airbnb_median_daily_price,median_price_per_m2,estimated_capex,net_operating_income,roi_pct,payback_years
+tabuleiro dos oliveiras,20,125,625.81,11571.43,57857150.0,4602676.1,7.96,12.57
+morretes,83,1691,490.0,10828.57,54142850.0,3603827.5,6.66,15.02
+meia praia,632,3230,595.5,15714.29,78571450.0,4379753.62,5.57,17.94
+centro,205,951,580.0,16666.67,83333350.0,4265755.0,5.12,19.54
+casa branca,15,65,349.0,10499.5,52497500.0,2566807.75,4.89,20.45
+ilhota,10,35,495.0,15697.67,78488350.0,3640601.25,4.64,21.56

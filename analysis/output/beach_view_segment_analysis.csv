@@ -1,0 +1,5 @@
+property_segment,listings,avg_amenity_score,avg_daily_price,median_daily_price
+Sem vista + score alto,12,12.33,661.82,600.5
+Vista mar + score baixo,379,9.78,729.48,590.0
+Vista mar + score alto,386,13.05,676.76,588.5
+Sem vista + score baixo,222,8.16,662.6,545.0

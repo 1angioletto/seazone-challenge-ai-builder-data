@@ -1,0 +1,2 @@
+model,rows_used,r2_score,mae_brl,intercept_brl
+linear_regression,977,0.2029,227.42,69.17
